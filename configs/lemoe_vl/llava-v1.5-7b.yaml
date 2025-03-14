@@ -1,0 +1,13 @@
+edit_model_name: "llava-v1.5-7b"
+edit_layer_inpt_path: "language_model.model.layers.30.mlp"
+edit_layer_outpt_path: "language_model.model.layers.30.mlp"
+edit_layer_i_of_inpt: 18
+llm_layer_tmp: "language_model.model.layers"
+llm_hidden_dim1: 4096
+llm_hidden_dim2: 11008
+lora_rank: 32
+lora_edit_batch_size: 20
+max_steps: 100
+min_loss: 0.03
+lr: 1.e-4
+topk: 1

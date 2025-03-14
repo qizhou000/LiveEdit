@@ -1,0 +1,10 @@
+edit_model_name: "llava-v1.5-7b"
+retriever_path: "models/multi-qa-mpnet-base-dot-v1"
+retrieval_embed_dim: 768
+sim_threshold: 0.3
+fine_tune_modules_path: language_model
+train_config:
+  lr: 5.e-6
+  relia_lambda: 1
+  gen_lambda: 1
+  loc_lambda: 1

@@ -1,0 +1,9 @@
+edit_model_name: "llava-v1.5-7b"
+layers: [31]
+num_steps: 25
+batch_size: 1
+lr: 1.e-3
+weight_decay: 0
+norm_constraint: false
+rewrite_module_tmp: "language_model.model.layers.31.mlp.down_proj.weight" # last llm layer
+# rewrite_module_tmp: "multi_modal_projector" # vision module

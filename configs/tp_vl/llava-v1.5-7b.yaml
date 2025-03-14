@@ -1,0 +1,12 @@
+edit_model_name: "llava-v1.5-7b"
+edit_layer: 31
+num_steps: 25
+lr: 1.e-2
+loss_a_lambda: 1.e-4
+loss_m_lambda: 1.e-4
+weight_decay: 0
+mlp_in_module_tmps: 
+- language_model.model.layers.{}.mlp.gate_proj
+- language_model.model.layers.{}.mlp.up_proj
+mlp_out_module_tmps: 
+- language_model.model.layers.{}.mlp.down_proj

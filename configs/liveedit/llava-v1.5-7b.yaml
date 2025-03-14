@@ -1,0 +1,23 @@
+edit_model_name: "llava-v1.5-7b"
+retrieval_editor:
+  module_dim: 1024
+  cross_att_head_n: 8
+  lora_rank: 4
+  eqe_n: 4 # editing query representation
+  lora_scale: 5
+train_cfg:
+  lr: 1.e-4
+  lr_cut_it: [10000]
+  lr_cut_rate: 0.1
+  rel_lambda: 1
+  gen_lambda: 1
+  loc_lambda: 1
+  soft_routing_lambda: 1
+  hard_routing_lambda: 1
+llm_mid_dim: 4096
+llm_layer_tmp: "language_model.model.layers.{}"
+edit_layer_i: 21
+
+
+
+

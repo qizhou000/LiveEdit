@@ -1,0 +1,20 @@
+edit_layer_i: 21
+edit_model_name: blip2-opt-2.7b
+llm_layer_tmp: language_model.model.decoder.layers.{}
+llm_mid_dim: 2560
+retrieval_editor:
+  cross_att_head_n: 8
+  eqe_n: 4
+  lora_rank: 4
+  lora_scale: 5
+  module_dim: 1024
+train_cfg:
+  gen_lambda: 1
+  hard_routing_lambda: 1
+  loc_lambda: 1
+  lr: 0.0001
+  lr_cut_it:
+  - 10000
+  lr_cut_rate: 0.1
+  rel_lambda: 1
+  soft_routing_lambda: 1

@@ -1,0 +1,25 @@
+edit_model_name: blip2-opt-2.7b
+edit_modules: 
+- language_model.model.decoder.layers.29.fc1
+- language_model.model.decoder.layers.29.fc2
+- language_model.model.decoder.layers.30.fc1
+- language_model.model.decoder.layers.30.fc2
+- language_model.model.decoder.layers.31.fc1
+- language_model.model.decoder.layers.31.fc2
+
+
+
+init_edit_lr: 1.e-4
+edit_lr_lr: 1.e-4
+relia_lambda: 0.1
+gen_lambda: 0.1
+loc_lambda: 0.1
+aux_model:
+  n_hidden: 1
+  hidden_dim: null
+  init: id
+  norm: True
+  act: relu
+  rank: 1920
+  shared: True
+  lr: 1.e-6

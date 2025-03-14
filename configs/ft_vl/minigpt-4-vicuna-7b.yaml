@@ -1,0 +1,9 @@
+edit_model_name: "minigpt-4-vicuna-7b"
+layers: [31]
+num_steps: 25
+batch_size: 1
+lr: 1.e-3
+weight_decay: 0
+norm_constraint: false
+rewrite_module_tmp: "llama_model.model.layers.31.mlp.down_proj.weight" # last llm layer
+# rewrite_module_tmp: "Qformer" # vision module

@@ -1,0 +1,25 @@
+edit_model_name: "minigpt-4-vicuna-7b"
+edit_modules: 
+- llama_model.model.layers.29.mlp.gate_proj
+- llama_model.model.layers.29.mlp.up_proj
+- llama_model.model.layers.29.mlp.down_proj
+- llama_model.model.layers.30.mlp.gate_proj
+- llama_model.model.layers.30.mlp.up_proj
+- llama_model.model.layers.30.mlp.down_proj
+- llama_model.model.layers.31.mlp.gate_proj
+- llama_model.model.layers.31.mlp.up_proj
+- llama_model.model.layers.31.mlp.down_proj
+init_edit_lr: 1.e-4
+edit_lr_lr: 1.e-4
+relia_lambda: 0.1
+gen_lambda: 0.1
+loc_lambda: 0.1
+aux_model:
+  n_hidden: 1
+  hidden_dim: null
+  init: id
+  norm: True
+  act: relu
+  rank: 1920
+  shared: True
+  lr: 1.e-6

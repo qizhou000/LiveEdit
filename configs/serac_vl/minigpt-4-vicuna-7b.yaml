@@ -1,0 +1,13 @@
+edit_model_name: minigpt-4-vicuna-7b
+counterfact_model_path: ".../opt-125m"
+counterfact_model_rep_dim: 768
+classifier_path: ".../bert-base-cased"
+classifier_rep_dim: 768
+llm_hidden_size: 4096
+llm_norm_path: "llama_model.model.norm"
+llm_voc_path: "llama_model.lm_head"
+train_config:
+  lr: 1.e-4
+  relia_lambda: 1
+  gen_lambda: 1
+  loc_lambda: 1

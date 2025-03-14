@@ -1,0 +1,22 @@
+edit_model_name: llava-v1.5-7b
+model_hidden_size: 4096
+retr_top_k: 1
+krm:
+  krm_base_path: "models/roberta-base"
+  krm_base_dim: 768
+  prompt_token_n: 3
+  knowledge_rep_dim: 4096
+  knowl_rep_prot_token_n: 10
+train:
+  krm_lr: 1.e-5
+  pt_lr: 1.e-5
+  relia_lambda: 1
+  gen_lambda: 1
+  loc_lambda: 1
+  contra_lambda: 1
+  query_knowledge_t: 1
+  query_prototype_t: 1
+  constra_hinge_scale: 1.2 
+  edit_hinge_scale: 1.2 
+
+

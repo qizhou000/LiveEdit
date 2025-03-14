@@ -1,0 +1,11 @@
+edit_model_name: "blip2-opt-2.7b"
+edit_layer: 31
+num_steps: 25
+lr: 1.e-2
+loss_a_lambda: 1.e-4
+loss_m_lambda: 1.e-4
+weight_decay: 0
+mlp_in_module_tmps: 
+- "language_model.model.decoder.layers.{}.fc1"
+mlp_out_module_tmps: 
+- "language_model.model.decoder.layers.{}.fc2"
