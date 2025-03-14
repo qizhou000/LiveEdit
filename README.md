@@ -4,20 +4,13 @@ Source code for CVPR paper [Lifelong Knowledge Editing for Vision Language Model
 
 ## Lifelong Editing
 
-<figure>
-    <img src="figures\fig_lifelong-VLLM-editing.svg" alt="示例 SVG" width="100%; margin-right: 5px;">
-    <figcaption>Figure 1: Lifelong VLLM Editing. In this scenario, the edited VLLM is required to correctly respond to queries involving the edited data within the generalization domain, while maintaining consistent responses in locality domains. The top left shows test cases where Rel., T-Gen./M-Gen., T-Loc., and M-Loc. denote reliability, text/modal generality, and text locality, respectively. The bottom right illustrates the responses of an effectively edited VLLM across several editing timesteps.</figcaption>
-</figure>
-
+![Lifelong editing](figures\fig_lifelong-VLLM-editing.svg)
+Figure 1: Lifelong VLLM Editing. In this scenario, the edited VLLM is required to correctly respond to queries involving the edited data within the generalization domain, while maintaining consistent responses in locality domains. The top left shows test cases where Rel., T-Gen./M-Gen., T-Loc., and M-Loc. denote reliability, text/modal generality, and text locality, respectively. The bottom right illustrates the responses of an effectively edited VLLM across several editing timesteps.
 
 ## Framework of LiveEdit
-<figure>
-    <img src="figures\fig_liveedit.svg" alt="示例 SVG" width="100%; margin-right: 5px;">
-    <figcaption>Figure 2: Illustration of the LiveEdit framework. 
-The upper part illustrates the editing process of LiveEdit. 
-At time step $t$, the representation of an edit sample $(v_{e_t},p_{e_t},o_{e_t})$ at layer $l_e$ serves as an editing signal to generate the editing expert $(U_{e_t}, V_{e_t})$ via $f_{eg}$ and routing features $(\hat{\phi}_{v_{e_t}},\hat{\psi}_{p_{e_t}})$ via $\hat{f}_{fe}$. Both are then added to the expert repository $\mathcal{E}_{t}$.
-The lower part shows the VLLM inference process with LiveEdit, where $\bar{f}_{fe}$ extracts input sample features at layer $l_e$ to route editing experts, which then adapt the representation.</figcaption>
-</figure>
+
+![Framework of LiveEdit](figures\fig_liveedit.svg)
+Figure 2: Illustration of the LiveEdit framework. The upper part illustrates the editing process of LiveEdit. At time step $t$, the representation of an edit sample $(v_{e_t},p_{e_t},o_{e_t})$ at layer $l_e$ serves as an editing signal to generate the editing expert $(U_{e_t}, V_{e_t})$ via $f_{eg}$ and routing features $(\hat{\phi}_{v_{e_t}},\hat{\psi}_{p_{e_t}})$ via $\hat{f}_{fe}$. Both are then added to the expert repository $\mathcal{E}_{t}$. The lower part shows the VLLM inference process with LiveEdit, where $\bar{f}_{fe}$ extracts input sample features at layer $l_e$ to route editing experts, which then adapt the representation.
 
 
 
