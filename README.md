@@ -20,12 +20,16 @@ Source code for CVPR paper [Lifelong Knowledge Editing for Vision Language Model
 # Train editors
 Please follow the script below to train an editor that requires training:
 
-`python train_vllm_editor.py -en liveedit -mn blip2 -dna EVQA -bs 8 -dvc "cuda:0" -edvc 0 -lkpt None -tnp EVQA -eps 50 -sci 500`
+```
+python train_vllm_editor.py -en liveedit -mn blip2 -dna EVQA -bs 8 -dvc "cuda:0" -edvc 0 -lkpt None -tnp EVQA -eps 50 -sci 500
+```
 
 # Evaluate editors
 Please follow the script below to evaluate the editors. If an editor does not require training, please set `-ckpt` to `None`."
 
-`python test_vllm_edit.py -en "liveedit" -mn "blip2" -sen 1000 -dvc "cuda:0" -dn "EVQA" -ckpt "records/liveedit/blip2-opt-2.7b/EVQA/checkpoints/ckpt"`
+```
+python test_vllm_edit.py -en "liveedit" -mn "blip2" -sen 1000 -dvc "cuda:0" -dn "EVQA" -ckpt "records/liveedit/blip2-opt-2.7b/EVQA/checkpoints/ckpt"
+```
 
 
 
