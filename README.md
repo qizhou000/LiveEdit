@@ -1,6 +1,6 @@
 # LiveEdit
 
-Source code for CVPR paper [Lifelong Knowledge Editing for Vision Language Models with Low-Rank Mixture-of-Experts](https://arxiv.org/abs/2411.15432)
+Source code for CVPR paper [Lifelong Knowledge Editing for Vision Language Models with Low-Rank Mixture-of-Experts](https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Lifelong_Knowledge_Editing_for_Vision_Language_Models_with_Low-Rank_Mixture-of-Experts_CVPR_2025_paper.html)
 
 
 ![Lifelong editing](figures/fig_lifelong-VLLM-editing.svg)
@@ -36,25 +36,13 @@ python test_vllm_edit.py -en "liveedit" -mn "blip2" -sen 1000 -dvc "cuda:0" -dn 
 # Citation
 Please cite our paper if you use LiveEdit in your work.
 ```bibtex
-@article{DBLP:journals/corr/abs-2411-15432,
-  author       = {Qizhou Chen and
-                  Chengyu Wang and
-                  Dakan Wang and
-                  Taolin Zhang and
-                  Wangyue Li and
-                  Xiaofeng He},
-  title        = {Lifelong Knowledge Editing for Vision Language Models with Low-Rank
-                  Mixture-of-Experts},
-  journal      = {CoRR},
-  volume       = {abs/2411.15432},
-  year         = {2024},
-  url          = {https://doi.org/10.48550/arXiv.2411.15432},
-  doi          = {10.48550/ARXIV.2411.15432},
-  eprinttype    = {arXiv},
-  eprint       = {2411.15432},
-  timestamp    = {Wed, 01 Jan 2025 13:20:30 +0100},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2411-15432.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
+@InProceedings{Chen_2025_CVPR,
+    author    = {Chen, Qizhou and Wang, Chengyu and Wang, Dakan and Zhang, Taolin and Li, Wangyue and He, Xiaofeng},
+    title     = {Lifelong Knowledge Editing for Vision Language Models with Low-Rank Mixture-of-Experts},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {9455-9466}
 }
 ```
 
